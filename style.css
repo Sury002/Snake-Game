@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  html, body {
+    height: 100%;
+    width: 100%;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #751619, #c52823, #580b0b);
+    overflow-y: scroll;
+    scrollbar-width: none; 
+  }
+  
+  body::-webkit-scrollbar {
+    display: none; 
+  }
+  
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 2rem 1rem;
+    color: white;
+  }
+  
+  .game-container {
+    max-width: 600px;
+    width: 100%;
+    text-align: center;
+  }
+  
+  h1 {
+    font-size: 2.2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .score {
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+  }
+  
+  canvas {
+    width: 100%;
+    max-width: 450px;
+    aspect-ratio: 1 / 1;
+    background-color: #111;
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    margin: 0 auto;
+    display: block;
+  }
+  
+  .instructions {
+    font-size: 1rem;
+    margin-top: 0.75rem;
+    max-width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.5;
+    padding-top: 10px;
+  }
+  
+  .controls {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.75rem;
+    margin-top: 1.5rem;
+  }
+  
+  .arrow-row {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+  }
+  
+  .controls button {
+    width: 60px;
+    height: 60px;
+    font-size: 1.5rem;
+    border: none;
+    border-radius: 10px;
+    background-color: #222;
+    color: white;
+    cursor: pointer;
+    transition: 0.2s ease;
+  }
+  
+  .controls button:hover {
+    background-color: #444;
+  }
+  
