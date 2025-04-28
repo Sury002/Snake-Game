@@ -64,9 +64,22 @@ function updateSnake() {
 }
 
 function placeFood() {
-  food.x = Math.floor(Math.random() * (canvas.width / gridSize)) * gridSize;
-  food.y = Math.floor(Math.random() * (canvas.height / gridSize)) * gridSize;
+  let newFood;
+  let isOnSnake;
+
+  do {
+    newFood = {
+      x: Math.floor(Math.random() * (canvas.width / gridSize)) * gridSize,
+      y: Math.floor(Math.random() * (canvas.height / gridSize)) * gridSize,
+    };
+
+  
+    isOnSnake = snake.some(segment => segment.x === newFood.x && segment.y === newFood.y);
+
+  } while (isOnSnake); 
+  food = newFood;
 }
+
 
 function gameLoop() {
   if (gameOver) {
