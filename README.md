@@ -22,3 +22,5 @@ A modern take on the classic Snake game, built using **HTML5 Canvas**, **CSS**, 
 
 - **Keyboard**: Arrow keys to move the snake  
 - **Mobile**: On-screen buttons to control direction
+
+[Live link](https://suryassnakegame.netlify.app)
